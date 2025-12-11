@@ -1,0 +1,16 @@
+<input id="char-input" />
+<p id="char-count">0</p>
+
+<script>
+  // JS goes here
+
+  let input = document.querySelector("#char-input");
+
+  let count = document.querySelector("#char-count");
+
+  input.addEventListener('input',()=>{
+
+    count.textContent = input.value.length;
+    
+  });
+</script>

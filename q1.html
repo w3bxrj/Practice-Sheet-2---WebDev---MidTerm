@@ -1,0 +1,17 @@
+<button id="count-btn">Click Me</button>
+<p id="count">0</p>
+
+<script>
+  // JS goes here
+
+  let p = document.querySelector("#count");
+
+  let btn = document.querySelector("#count-btn");
+
+
+  btn.addEventListener('click',()=>{
+
+    p.innerText = Number(p.innerText) + 1;
+    
+  })
+</script>

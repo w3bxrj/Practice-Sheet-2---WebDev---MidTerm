@@ -1,0 +1,22 @@
+<button id="count-items-btn">Count Items</button>
+<ul id="items">
+  <li>A</li>
+  <li>B</li>
+</ul>
+<p id="output"></p>
+
+<script>
+  // JS goes here
+
+  let output = document.querySelector("#output");
+
+  let list = document.querySelectorAll("li");
+
+  let btn = document.querySelector("#count-items-btn");
+
+  btn.addEventListener('click',()=>{
+
+      output.textContent = list.length;
+  })
+
+</script>

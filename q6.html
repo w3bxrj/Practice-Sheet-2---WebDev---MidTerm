@@ -1,0 +1,14 @@
+<button id="disable-btn">Click Once</button>
+
+<script>
+  // JS goes here
+
+  let btn = document.querySelector("#disable-btn");
+
+  btn.addEventListener('click',()=>{
+
+    btn.textContent = "Disabled";
+
+    btn.disabled = true;
+  })
+</script>

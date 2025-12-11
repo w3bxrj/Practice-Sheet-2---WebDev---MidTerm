@@ -1,0 +1,31 @@
+<input id="name-input" />
+<button id="add-name-btn">Add Name</button>
+<ul id="name-list"></ul>
+
+<script>
+  // JS goes here
+
+  let input = document.querySelector("#name-input");
+  let add = document.querySelector("#add-name-btn");
+  let list = document.querySelector("#name-list");
+
+    add.addEventListener('click',()=>{
+            
+        let name = input.value.trim();
+
+        if(name === "")
+        {
+            return;
+        }
+
+        let li = document.createElement("li");
+
+        li.innerText = name;
+
+        list.appendChild(li);
+
+        input.value = "";
+
+    });
+
+</script>

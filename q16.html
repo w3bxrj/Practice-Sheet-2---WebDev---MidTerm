@@ -1,0 +1,25 @@
+<input id="pass" type="password" />
+<button id="toggle-pass">Show</button>
+
+<script>
+  // JS goes here
+
+  let btn = document.querySelector("#toggle-pass");
+
+  let input = document.querySelector("#pass");
+
+  btn.addEventListener('click',()=>{
+    
+    if(input.type === "password")
+    {
+        input.type = "text";
+        btn.textContent = "Hide";
+    }
+    else if(input.type === "text")
+    {
+        input.type = "password";
+        btn.textContent = "Show";
+    }
+    
+  })
+</script>

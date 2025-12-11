@@ -1,0 +1,22 @@
+<button id="add-img-btn">Add Image</button>
+<div id="img-container"></div>
+
+<script>
+  // JS goes here
+
+  const btn = document.querySelector("#add-img-btn");
+
+  const box = document.querySelector("#img-container");
+  
+  btn.addEventListener('click',()=>{
+      
+      let img = document.createElement("img");
+
+      img.setAttribute("src","gorgeous-aurora-borealis-over-the-forest-picjumbo-com.jpg");
+
+      img.setAttribute("width","100");
+
+      box.append(img);
+    
+  })
+</script>

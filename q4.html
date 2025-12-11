@@ -1,0 +1,23 @@
+<button id="color-btn">Change Color</button>
+<div id="color-box" style="width:100px;height:100px;"></div>
+
+<script>
+  // JS goes here
+
+  let btn = document.querySelector("#color-btn");
+  let box = document.querySelector("#color-box");
+
+  function color()
+  {
+    return Math.ceil(Math.random()*256);
+  }
+
+  btn.addEventListener('click',()=>{
+
+        let r = color();
+        let g = color();
+        let b = color();
+
+        box.style.backgroundColor = `rgb(${r},${g},${b})`;
+  });
+</script>

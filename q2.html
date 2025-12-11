@@ -1,0 +1,15 @@
+<input id="text-input" type="text" />
+<p id="preview"></p>
+
+<script>
+  // JS goes here
+
+  let input = document.querySelector("#text-input");
+
+  let preview = document.querySelector("#preview");
+
+  input.addEventListener("input",()=>{
+
+    preview.textContent = input.value;
+  })
+</script>

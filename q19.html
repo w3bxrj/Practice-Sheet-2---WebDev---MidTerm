@@ -1,0 +1,19 @@
+<p id="text">Zoom Me</p>
+<button id="zoom-btn">Zoom</button>
+
+<script>
+  // JS goes here
+
+  let btn = document.querySelector("#zoom-btn");
+
+  let p = document.querySelector("#text");
+
+  btn.addEventListener('click',()=>{
+
+    let size = parseInt(window.getComputedStyle(p).fontSize);
+
+    size += 2;
+
+    p.style.fontSize = size;
+  })
+</script>

@@ -1,0 +1,25 @@
+<style>
+  .done { text-decoration: line-through; opacity: 0.7; }
+</style>
+
+<ul id="todo">
+  <li>Task 1</li>
+  <li>Task 2</li>
+  <li>Task 3</li>
+</ul>
+
+<script>
+  // JS goes here
+
+  let list = document.querySelectorAll('li');
+
+  for(i = 0; i < list.length; i++)
+  {
+    list[i].addEventListener('click',function(){
+
+        this.classList.toggle("done");
+        // this.classList.add("done");
+    });
+  }
+
+</script>

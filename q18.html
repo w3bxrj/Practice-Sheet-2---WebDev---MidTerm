@@ -1,0 +1,16 @@
+<footer id="year">----</footer>
+<button id="set-year">Set Year</button>
+
+<script>
+  // JS goes here
+  let btn = document.querySelector("#set-year");
+
+  let year = document.querySelector("#year");
+
+  btn.addEventListener('click',()=>{
+
+    let add = new Date().getFullYear();
+
+    year.textContent = add;
+  })
+</script>

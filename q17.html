@@ -1,0 +1,24 @@
+<button id="num-btn">Add Number</button>
+<ul id="num-list"></ul>
+
+<script>
+  // JS goes here
+
+  let btn = document.querySelector("#num-btn");
+
+  let list = document.querySelector("#num-list");
+
+  let count = 0;
+
+  btn.addEventListener('click',()=>{
+
+    count++;
+
+    let li = document.createElement("li");
+
+    li.innerText = count;
+
+    list.appendChild(li);
+  })
+
+</script>

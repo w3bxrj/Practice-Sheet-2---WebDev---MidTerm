@@ -1,0 +1,28 @@
+<style>
+  .box { width:60px;height:60px;background:#ddd;display:inline-block;margin:4px;cursor:pointer; }
+  .active { border: 3px solid #333; }
+</style>
+
+<div id="container">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+
+<script>
+  // JS goes here
+
+  let box = document.querySelector("#container");
+
+  let list = document.querySelectorAll(".box");
+
+  box.addEventListener('click',(e)=>{
+
+    if(!e.target.classList.contains("box"))
+    return;
+
+    list.forEach(e => e.classList.remove("active"));
+
+    e.target.classList.add("active");
+  })
+</script>
